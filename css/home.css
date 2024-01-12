@@ -1,0 +1,291 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+nav {
+
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+h2.nav-heading {
+    font-size: 2.5rem;
+    color: brown;
+    font-family: "bonheur royale",sans-serif;
+
+}
+
+p.nav-subheading {
+    font-size: 1rem;
+    color: brown;
+    font-family: "bonheur royale",sans-serif;
+}
+
+ /* main */
+
+ main div.categories {
+    width: 100%;
+    min-height: 510px;
+    display: flex;
+ }
+
+
+
+ div.categories div {
+
+   flex: 1;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+ }
+
+ div.categories div:hover  h2.category-title {
+   transform: translateY(-30px);
+ }
+ div.categories div:hover  a.category-button {
+   transform: translateY(-30px);
+ }
+
+
+ main div.categories  div.men {
+    background-image: url("../media/men.avif");
+
+ }
+ main div.categories  div.women {
+    background-image: url("../media/women.png");
+ }
+ main div.categories  div.kids {
+    background-image: url("../media/kids-wear.webp");
+ }
+ main div.categories  div.summer {
+    background-image: url("../media/summer.jpg");
+ }
+ main div.categories  div.winter {
+    background-image: url("../media/winter.jpg");
+  
+ }
+
+ h2.category-title {
+    color: black;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    font-family: "Calligraffitti", cursive;
+ }
+
+ a.category-button {
+   padding: 4px 20px;
+   background-color: transparent;
+   color: black;
+   border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+   text-decoration: none;
+ }
+
+
+
+ 
+
+
+/* Brand-info */
+.card {
+   width: 70%;
+   background-color: #edf6f9;
+   margin-inline: auto;
+   margin-top: 10%;
+   min-height: 300px;
+   border-radius: 20px;
+   padding: 40px;
+}
+
+.brand-info {
+  
+}
+
+.brand-info h2 {
+   font-family: "bonheur royale",sans-serif;
+   opacity: 0.3;
+}
+
+ p.card-description {
+   margin-top: 25px;
+
+}
+
+.ceo {
+   
+   position: relative;
+   
+}
+
+.ceo h2 {
+   color: gray;
+   font-size: 1.2rem;
+   font-weight: 400;
+}
+
+.ceo img.ceo-img {
+   
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   margin-bottom: 15px;
+}
+
+.contact {
+    background-color: aliceblue;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    min-width: 70px;
+    min-height: 70px;
+    padding: 10px;
+    border-radius: 50%;
+    color: gray;
+    font-style: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.linkedin{
+    position: fixed;
+    bottom: 120px!important;
+    
+}
+.instagram{
+    position: fixed;
+    bottom: 210px!important;
+}
+.hide {
+   opacity: 0;
+}
+
+
+
+/* Footer */
+
+footer div.social-media {
+
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+footer div.social-media h3.social-media-heading {
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+div.social-media-links {
+   display: flex;
+   gap: 20px;
+}
+a.link {
+   
+   border-radius: 50%;
+   font-size: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: gray;
+}
+
+@media screen and (max-width:1023px) {
+
+   nav {
+      padding: 10px;
+   }
+
+   h2.nav-heading {
+      font-size: 1.5rem;
+      color: brown;
+      font-family: "bonheur royale",sans-serif;
+  }
+
+  p.nav-subheading {
+   display: none;
+  }
+
+   main div.categories {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 0px;
+   }
+
+
+   div.categories  div {
+    
+        width: 100%;
+        height: 100%;    
+        min-height: 450px; 
+        background-size: cover;
+        display: flex;
+        align-items: flex-start;
+        padding:20px;
+   }
+
+   h2.category-title {
+      font-size: 1.5rem;
+   }
+    
+   .card {
+      width: 100%;
+      margin-inline: auto;
+      margin-top: 10%;
+      min-height: 300px;
+      border-radius: 0;
+      padding: 30px;
+   }
+
+   .contact{
+      min-height: 50px;
+      min-width: 50px;
+      font-style: 1rem;
+   }
+
+   .linkedin{
+      position: fixed;
+      bottom: 100px!important;
+      
+  }
+  .instagram{
+      position: fixed;
+      bottom: 170px!important;
+  }
+   
+  .card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: transparent;
+  }
+  .card-description {
+   text-align: center;
+   font-size: 1.2rem;
+  }
+}
