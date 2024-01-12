@@ -17,11 +17,14 @@ a {
 nav {
 
     text-align: center;
+    background-color: #fcfdff;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 10px;
+    padding: 20px;
+    height: 13vh;
 }
 
 h2.nav-heading {
@@ -39,11 +42,12 @@ p.nav-subheading {
 
  /* main */
 
- main div.categories {
+ main div.categories{
     width: 100%;
-    min-height: 510px;
+    min-height: 87vh;
     display: flex;
  }
+
 
 
 
@@ -67,14 +71,14 @@ p.nav-subheading {
 
 
  main div.categories  div.men {
-    background-image: url("../media/men.avif");
+    background-image: url("../media/men.jpg");
 
  }
  main div.categories  div.women {
-    background-image: url("../media/women.png");
+    background-image: url("../media/women.jpg");
  }
  main div.categories  div.kids {
-    background-image: url("../media/kids-wear.webp");
+    background-image: url("../media/kids-wear.jpg");
  }
  main div.categories  div.summer {
     background-image: url("../media/summer.jpg");
@@ -111,10 +115,13 @@ p.nav-subheading {
    width: 70%;
    background-color: #edf6f9;
    margin-inline: auto;
-   margin-top: 10%;
+   margin-top: 5%;
    min-height: 300px;
    border-radius: 20px;
    padding: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .brand-info {
@@ -122,12 +129,16 @@ p.nav-subheading {
 }
 
 .brand-info h2 {
-   font-family: "bonheur royale",sans-serif;
-   opacity: 0.3;
+   font-family: "Calligraffitti", cursive;
+   color: black;
+   font-weight: bold;
+   font-size: 2rem;
 }
 
  p.card-description {
    margin-top: 25px;
+   text-align: center;
+   font-size: 1.2rem;
 
 }
 
@@ -138,9 +149,10 @@ p.nav-subheading {
 }
 
 .ceo h2 {
-   color: gray;
-   font-size: 1.2rem;
-   font-weight: 400;
+   
+   color: black;
+   font-weight: bold;
+   font-size: 1.5rem;
 }
 
 .ceo img.ceo-img {
@@ -214,10 +226,18 @@ a.link {
    color: gray;
 }
 
+div.copyright {
+   background-color: black;
+   text-align: center;
+   padding: 10px;
+   color: white;
+}
+
 @media screen and (max-width:1023px) {
 
    nav {
       padding: 10px;
+      height: 8vh;
    }
 
    h2.nav-heading {
@@ -234,7 +254,7 @@ a.link {
       width: 100%;
       display: flex;
       flex-direction: column;
-      min-height: 0px;
+      min-height: 90vh;
    }
 
 
@@ -288,4 +308,9 @@ a.link {
    text-align: center;
    font-size: 1.2rem;
   }
+
+  div.copyright {
+   font-size: 0.8rem;
+}
+
 }
