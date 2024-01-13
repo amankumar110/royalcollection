@@ -74,16 +74,17 @@ p.nav-subheading {
 
  }
  main div.categories  div.women {
-    background-image: url("../media/women.jpg");
+    background-image: url("../media/women.png");
+    background-position: 80%;
  }
  main div.categories  div.kids {
-    background-image: url("../media/kids-wear.jpg");
+    background-image: url("../media/kids.png");
  }
  main div.categories  div.summer {
     background-image: url("../media/summer.jpg");
  }
  main div.categories  div.winter {
-    background-image: url("../media/winter.jpg");
+    background-image: url("../media/winter.png");
   
  }
 
@@ -123,10 +124,6 @@ p.nav-subheading {
    align-items: center;
 }
 
-.brand-info {
-  
-}
-
 .brand-info h2 {
    font-family: "Calligraffitti", cursive;
    color: black;
@@ -162,6 +159,11 @@ p.nav-subheading {
    margin-bottom: 15px;
 }
 
+.tagline {
+   font-size: 2.5rem;
+   margin: 5% auto;
+   text-align: center;
+}
 .contact {
     background-color: aliceblue;
     position: fixed;
@@ -240,7 +242,7 @@ div.copyright {
    }
 
    h2.nav-heading {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       color: brown;
       font-family: "bonheur royale",sans-serif;
   }
@@ -281,6 +283,9 @@ div.copyright {
       padding: 30px;
    }
 
+   div.tagline {
+      font-size: 1.5rem;
+   }
    .contact{
       min-height: 50px;
       min-width: 50px;
@@ -311,5 +316,7 @@ div.copyright {
   div.copyright {
    font-size: 0.8rem;
 }
+
+
 
 }
