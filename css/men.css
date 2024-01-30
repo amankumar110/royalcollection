@@ -63,30 +63,32 @@ h2.product-heading {
 
     width: 20%;
     padding: 0px;
-    border: 1px solid black;
-    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 50px;
+    box-shadow: 1px 1px rgb(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .product-image {
-    max-width: 100%;
-    
+    width: 100%;
+    height: 70%;
     display: block;
 }
 
 .product-detail {
 
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     border-bottom: 1px solid black;
     padding: 8px 12px;
 }
+
 .product-detail:last-child{
-    border-bottom: 0;
+    border: 0;
 }
 
 .product-name {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: "Calligraffitti", cursive;
     border: 0;
 }
